@@ -24,6 +24,7 @@ export default function App() {
     })
 
     console.log('Resultado =>>>', autenticacaoBiometrica.success);
+    setUsuarioAutenticado(autenticacaoBiometrica.success)
 
   }
 
@@ -33,7 +34,16 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Logado ========== {usuarioAutenticado ? 'Logado' : 'não logado'}</Text>
+      <Text style={{
+        backgroundColor: usuarioAutenticado ? 'green' : '#fff',
+        color: usuarioAutenticado ? '#fff' : '#000',
+        paddingHorizontal: 8,
+        paddingVertical: 4,
+        marginBottom: 12,
+        borderRadius: 12
+      }}>
+        Logado ========== {usuarioAutenticado ? 'Logado' : 'não logado'}
+      </Text>
       <View>
         <Button
           title="Biometria"
