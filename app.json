@@ -18,7 +18,8 @@
       "supportsTablet": true,
       "infoPlist": {
         "NSFaceIDUsageDescription": "Allow $(PRODUCT_NAME) to use Face ID."
-      }
+      },
+      "bundleIdentifier": "com.breditecnologia.authlocal"
     },
     "android": {
       "adaptiveIcon": {
